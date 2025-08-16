@@ -22,6 +22,7 @@ interface IconData {
   y: number;
   icon: React.ReactNode;
   color: string;
+  clor:string;
   card: {
     title: string;
     description: string;
@@ -33,8 +34,9 @@ const icons: IconData[] = [
     id: 1,
     x: 8,
     y: 20,
-    icon: <Box className="w-8 h-8" />,
+    icon: <Box className="w-6 h-6" />,
     color: "bg-gray-800",
+    clor:"text-purple-500",
     card: {
       title: "3D Models",
       description: "Premium 3D assets for your projects"
@@ -44,8 +46,10 @@ const icons: IconData[] = [
     id: 2,
     x: 88,
     y: 15,
-    icon: <ShoppingCart className="w-8 h-8" />,
+    icon: <ShoppingCart className="w-6 h-6" />,
     color: "bg-gray-800",
+        clor:"text-orage-500",
+
     card: {
       title: "Shopping Cart",
       description: "Easy checkout and instant downloads"
@@ -55,8 +59,10 @@ const icons: IconData[] = [
     id: 3,
     x: 20,
     y: 35,
-    icon: <Tag className="w-8 h-8" />,
+    icon: <Tag className="w-6 h-6" />,
     color: "bg-gray-800",
+        clor:"text-pink-500",
+
     card: {
       title: "Digital Products",
       description: "Browse thousands of digital creations"
@@ -66,8 +72,10 @@ const icons: IconData[] = [
     id: 4,
     x: 5,
     y: 50,
-    icon: <Users className="w-8 h-8" />,
+    icon: <Users className="w-6 h-6" />,
     color: "bg-gray-800",
+        clor:"text-blue-500",
+
     card: {
       title: "Creator Community",
       description: "Join our community of digital creators"
@@ -77,8 +85,10 @@ const icons: IconData[] = [
     id: 5,
     x: 85,
     y: 45,
-    icon: <Search className="w-8 h-8" />,
+    icon: <Search className="w-6 h-6" />,
     color: "bg-gray-800",
+        clor:"text-green-500",
+
     card: {
       title: "Advanced Search",
       description: "Find exactly what you're looking for"
@@ -88,8 +98,10 @@ const icons: IconData[] = [
     id: 6,
     x: 18,
     y: 70,
-    icon: <Download className="w-8 h-8" />,
+    icon: <Download className="w-6 h-6" />,
     color: "bg-gray-800",
+        clor:"text-gray-500",
+
     card: {
       title: "Instant Downloads",
       description: "Get your purchases immediately"
@@ -99,8 +111,10 @@ const icons: IconData[] = [
     id: 7,
     x: 90,
     y: 75,
-    icon: <Upload className="w-8 h-8" />,
+    icon: <Upload className="w-6 h-6" />,
     color: "bg-gray-800",
+        clor:"text-red-500",
+
     card: {
       title: "Upload Content",
       description: "Share your creations with the community"
@@ -110,8 +124,10 @@ const icons: IconData[] = [
     id: 8,
     x: 10,
     y: 85,
-    icon: <Heart className="w-8 h-8" />,
+    icon: <Heart className="w-6 h-6" />,
     color: "bg-gray-800",
+        clor:"text-orange-500",
+
     card: {
       title: "Favorites",
       description: "Save your favorite digital products"
@@ -121,8 +137,10 @@ const icons: IconData[] = [
     id: 9,
     x: 40,
     y: 88,
-    icon: <Star className="w-8 h-8" />,
+    icon: <Star className="w-6 h-6" />,
     color: "bg-gray-800",
+        clor:"text-purple-300",
+
     card: {
       title: "Featured Models",
       description: "Discover our handpicked selection"
@@ -132,8 +150,10 @@ const icons: IconData[] = [
     id: 10,
     x: 60,
     y: 88,
-    icon: <Headphones className="w-8 h-8" />,
+    icon: <Headphones className="w-6 h-6" />,
     color: "bg-gray-800",
+        clor:"text-blue-500",
+
     card: {
       title: "Audio Assets",
       description: "High-quality audio files and music"
@@ -143,8 +163,10 @@ const icons: IconData[] = [
     id: 11,
     x: 85,
     y: 85,
-    icon: <Grid3X3 className="w-8 h-8" />,
+    icon: <Grid3X3 className="w-6 h-6" />,
     color: "bg-gray-800",
+        clor:"text-gray-300",
+
     card: {
       title: "Categories",
       description: "Explore different types of digital content"
@@ -172,7 +194,7 @@ export default function HeroSection() {
       {icons.map((iconData) => (
         <div
           key={iconData.id}
-          className={`absolute w-20 h-20 ${iconData.color} rounded-full flex items-center justify-center text-purple-400 cursor-pointer shadow-2xl hover:scale-110 transition-transform duration-300 z-10`}
+          className={`absolute w-18 h-18 ${iconData.color} rounded-full flex items-center justify-center ${iconData.clor} cursor-pointer shadow-2xl hover:scale-110 transition-transform duration-300 z-10`}
           style={{
             left: `${iconData.x}%`,
             top: `${iconData.y}%`,
