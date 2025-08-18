@@ -33,12 +33,12 @@ export default function Header() {
             <Search className="absolute right-2 top-1/2 h-4 w-4 -translate-y-1/2 text-white/50" />
           </div>
 
-          <button className=" bg-[#5865F2] dark:bg-gradient-to-bl dark:from-gray-900 dark:to-primary text-white font-semibold py-3 px-6 rounded-md flex items-center justify-center gap-3 hover:bg-[#4752c4] dark:hover:bg-primary transition-all duration-300 ease-in-out text-base relative overflow-hidden group ">
+          <button className="hidden md:flex bg-[#5865F2] dark:bg-gradient-to-bl dark:from-gray-900 dark:to-primary text-white font-semibold py-3 px-6 rounded-md items-center justify-center gap-3 hover:bg-[#4752c4] dark:hover:bg-primary transition-all duration-300 ease-in-out text-base relative overflow-hidden group">
             <FaDiscord className="h-6 w-6" />
             <span>Discord</span>
           </button>
 
-          <button className=" bg-[#5865F2] dark:bg-gradient-to-bl dark:from-gray-600 dark:to-primary text-white font-normal py-3 px-6 rounded-md flex items-center justify-center gap-3 hover:bg-[#4752c4] dark:hover:bg-primary transition-all duration-300 ease-in-out relative overflow-hidden group ">
+          <button className="hidden md:flex bg-[#5865F2] dark:bg-gradient-to-bl dark:from-gray-600 dark:to-primary text-white font-normal py-3 px-6 rounded-md items-center justify-center gap-3 hover:bg-[#4752c4] dark:hover:bg-primary transition-all duration-300 ease-in-out relative overflow-hidden group">
             <Upload className="h-6 w-6" />
             <span>Upload</span>
           </button>

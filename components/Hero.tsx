@@ -117,7 +117,6 @@ export default function HeroSection() {
 
   return (
     <section className="hero-section min-h-screen flex items-center justify-center text-center px-6 relative overflow-hidden">
-      {/* Floating icons */}
       {icons.map((iconData, i) => {
         const IconComp = iconData.icon;
         return (
@@ -141,7 +140,6 @@ export default function HeroSection() {
       })}
 
       <div className="max-w-4xl z-20 relative">
-        {/* Typewriter Heading */}
         <div className="mb-8">
           <h1
             ref={textRef}
