@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = { title: '3Dimli-style Hero', description: 'GSAP + Tailwind demo' }
+export const metadata = { title: '3Dimlio', description: 'GSAP + Tailwind demo' }
 
 
 export default function RootLayout({
